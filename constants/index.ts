@@ -202,12 +202,7 @@ export const Skill_data = [
   
   
   export const Other_skill = [
-    {
-      skill_name: "Go",
-      Image: "/go.png",
-      width: 60,
-      height: 60,
-    },
+
   ];
   
   
