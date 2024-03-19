@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mb-[20px] text-[15px] text-center">
-          &copy; Jorge Jiménez 2023. All rights reserved.
+          &copy; Jorge Jiménez.
         </div>
       </div>
     </div>
