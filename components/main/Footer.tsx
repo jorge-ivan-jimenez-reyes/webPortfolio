@@ -49,6 +49,7 @@ const Footer = () => {
         </div>
         <div className="mb-[20px] text-[15px] text-center">
           &copy; Jorge Jiménez.
+          
         </div>
       </div>
     </div>
