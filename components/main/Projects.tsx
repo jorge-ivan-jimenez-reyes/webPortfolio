@@ -12,7 +12,7 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/ioslab.png"
+          src="/ioslab2.png"
           title="IOS LAB PORTFOLIO"
           description="The platform provides an intuitive and comprehensive interface that allows
           professors, department heads, and administrators to access and manage information efficiently."
