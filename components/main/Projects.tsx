@@ -12,7 +12,7 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/ioslab2.png"
+          src="/ioslab.png"
           title="IOS LAB PORTFOLIO"
           description="The platform provides an intuitive and comprehensive interface that allows
           professors, department heads, and administrators to access and manage information efficiently."
@@ -21,7 +21,13 @@ const Projects = () => {
         <ProjectCard
           src="/SpaceWebsite.png"
           title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="Web portfolio for a space-themed website. The website is built using React js and Tailwind CSS."
+        />
+
+        <ProjectCard
+          src="/NewProject.png"
+          title="New Amazing Project"
+          description="This project showcases a cutting-edge application designed to revolutionize user experience in the tech industry. Built with the latest technologies, it offers unparalleled performance and functionality."
         />
       </div>
     </div>
