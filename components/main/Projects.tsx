@@ -25,9 +25,9 @@ const Projects = () => {
         />
 
         <ProjectCard
-          src="/NewProject.png"
-          title="New Amazing Project"
-          description="This project showcases a cutting-edge application designed to revolutionize user experience in the tech industry. Built with the latest technologies, it offers unparalleled performance and functionality."
+          src="/dashuser.png"
+          title="Academic Management Dashboard"
+          description="In collaboration with the IOS Lab and the Faculty of Engineering at Universidad Panamericana, I am developing a user dashboard designed for academic management. This platform allows faculty members to efficiently manage their profiles and upload their CVs, significantly enhancing the organization and accessibility of academic information."
         />
       </div>
     </div>

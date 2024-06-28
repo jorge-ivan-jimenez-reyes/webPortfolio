@@ -9,7 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-const cvUrl = "https://drive.google.com/file/d/1k6hS8W3R-KwRucK8elnKP8NKgAxfMFsZ/view?usp=drive_link";
+const cvUrl = "https://drive.google.com/file/d/1RgIJICXenY3oBtlZheRn4yhdAmZBbGHv/view?usp=sharing";
 const HeroContent = () => {
   const handleLearnMoreClick = () => {
     window.open(cvUrl, "_blank");
