@@ -11,7 +11,7 @@ const Projects = () => {
         My Projects
       </h1>
       <div className="w-full flex flex-col md:flex-row flex-wrap gap-6 px-5 justify-center">
-        <div className="w-80">
+        <div className="w-80 mb-10 md:mb-0">
           <ProjectCard
             src="/ioslab.png"
             title="IOS LAB PORTFOLIO"
@@ -20,7 +20,7 @@ const Projects = () => {
           />
         </div>
 
-        <div className="w-80">
+        <div className="w-80 mb-10 md:mb-0">
           <ProjectCard
             src="/SpaceWebsite.png"
             title="Space Themed Website"
@@ -28,7 +28,7 @@ const Projects = () => {
           />
         </div>
 
-        <div className="w-80">
+        <div className="w-80 mb-10 md:mb-0">
           <ProjectCard
             src="/dashuser.png"
             title="Academic Management Dashboard"
@@ -36,7 +36,7 @@ const Projects = () => {
           />
         </div>
 
-        <div className="w-80">
+        <div className="w-80 mb-10 md:mb-0">
           <ProjectCard
             src="/chatgptlocal.png"
             title="Local ChatGPT with Llama 2"
