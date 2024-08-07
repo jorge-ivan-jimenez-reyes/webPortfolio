@@ -35,6 +35,12 @@ const Projects = () => {
           title="Local ChatGPT with Llama 2"
           description="In this cutting-edge project, I've built a local version of ChatGPT using the Llama 2 model. This implementation, crafted with vanilla JavaScript, allows users to experience advanced AI capabilities directly on their own machines, ensuring privacy and performance without relying on cloud-based services. Dive into the future of AI with a seamless, locally hosted solution."
         />
+
+        <ProjectCard
+          src="/mernapp.png"
+          title="Finance Management Application"
+          description="Developed a finance management app using the MERN stack. Integrated a database to manage financial data and transactions. Designed an interface for tracking expenses, setting budgets, and generating reports. Engineered the app to be scalable, with potential for SaaS expansion."
+        />
       </div>
     </div>
   );
