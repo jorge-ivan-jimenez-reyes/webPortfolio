@@ -85,3 +85,18 @@ html {
   width: 100%;
   height: auto;
 }
+
+/* Fondo general */
+body {
+  background-color: #030014;
+}
+
+/* Sección con fondo negro */
+.section-black {
+  background-color: #000000;
+}
+
+/* Sección con degradado */
+.section-gradient {
+  background: linear-gradient(to bottom, #000000, #030014);
+}

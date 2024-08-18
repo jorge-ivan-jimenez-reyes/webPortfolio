@@ -4,8 +4,8 @@ import ProjectCard from "../sub/ProjectCard";
 const Projects = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center py-20"
       id="projects-section"
+      className="flex flex-col items-center justify-center gap-3 py-20 relative overflow-hidden bg-gradient-to-b from-black to-gray-900"
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-16">
         My Projects
@@ -14,10 +14,8 @@ const Projects = () => {
         <ProjectCard
           src="/ioslab.png"
           title="IOS LAB PORTFOLIO"
-          description="The platform provides an intuitive and comprehensive interface that allows
-          professors, department heads, and administrators to access and manage information efficiently."
+          description="The platform provides an intuitive and comprehensive interface that allows professors, department heads, and administrators to access and manage information efficiently."
         />
-       
         <ProjectCard
           src="/dashuser.png"
           title="Academic Management Dashboard"
@@ -33,6 +31,19 @@ const Projects = () => {
           title="Finance Management Application"
           description="Developed a finance management app using the MERN stack. Integrated a database to manage financial data and transactions. Designed an interface for tracking expenses, setting budgets, and generating reports. Engineered the app to be scalable, with potential for SaaS expansion."
         />
+      </div>
+      <div className="w-full h-full absolute">
+        <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
+          <video
+            className="w-full h-auto"
+            preload="false"
+            playsInline
+            loop
+            muted
+            autoPlay
+            src="/cards-video.webm"
+          />
+        </div>
       </div>
     </section>
   );

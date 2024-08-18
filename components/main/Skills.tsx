@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 py-20 relative overflow-hidden"
+      className="flex flex-col items-center justify-center gap-3 py-20 relative overflow-hidden bg-black"
     >
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-16">
         My Skills
