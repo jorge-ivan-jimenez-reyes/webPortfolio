@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Spline from "@splinetool/react-spline/next";
 
@@ -20,13 +18,13 @@ const HeroContent = () => {
   };
 
   return (
-    <div className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 via-purple-900 to-black">
-      <div className="relative flex flex-col md:flex-row items-center justify-center w-full max-w-screen-lg p-6">
-        <div className="w-full md:w-1/2 h-80 md:h-full">
+    <div className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 via-purple-900 to-black p-4 md:p-6">
+      <div className="relative flex flex-col md:flex-row items-center justify-center w-full max-w-screen-lg">
+        <div className="w-full md:w-1/2 h-64 md:h-full">
           <Spline scene="https://prod.spline.design/Nv5V8ifD3xBeWDkR/scene.splinecode" />
         </div>
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left mt-8 md:mt-0 md:ml-8">
-          <h1 className="text-5xl font-extrabold text-white leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
             Student{" "}
             <span className="bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
               Passionate

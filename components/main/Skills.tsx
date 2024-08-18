@@ -13,13 +13,13 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 py-20 relative overflow-hidden"
+      className="flex flex-col items-center justify-center gap-3 py-10 md:py-20 relative overflow-hidden bg-black"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-16">
+      <h1 className="text-[32px] md:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-10 md:mb-16">
         My Skills
       </h1>
       <SkillText />
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-wrap justify-center mt-4 gap-5 items-center">
         {(Frontend_skill as ImageData[]).map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -30,7 +30,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-wrap justify-center mt-4 gap-5 items-center">
         {(Backend_skill as ImageData[]).map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -41,7 +41,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+      <div className="flex flex-wrap justify-center mt-4 gap-5 items-center">
         {(Full_stack as ImageData[]).map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -51,19 +51,6 @@ const Skills = () => {
             index={index}
           />
         ))}
-      </div>
-      <div className="w-full h-full absolute">
-        <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
-          <video
-            className="w-full h-auto"
-            preload="false"
-            playsInline
-            loop
-            muted
-            autoPlay
-            src="/cards-video.webm"
-          />
-        </div>
       </div>
     </section>
   );

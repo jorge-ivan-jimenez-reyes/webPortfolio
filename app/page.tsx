@@ -16,7 +16,7 @@ export default function Home() {
         <Skills />
         <Projects />
       </div>
-      <Footer />  {/* Aquí se añade el Footer */}
+      <Footer />
     </main>
   );
 }
