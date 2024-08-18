@@ -1,26 +1,29 @@
 import Image from "next/image";
 import React from "react";
 
-interface Props {
+interface ProjectCardProps {
   src: string;
   title: string;
   description: string;
+  techStack: string;
+  impact: string;
 }
 
-const ProjectCard = ({ src, title, description }: Props) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ src, title, description, techStack, impact }) => {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] transform hover:scale-105 transition-transform duration-300 ease-in-out w-full h-[500px] flex flex-col">
-      <Image
-        src={src}
-        alt={title}
-        width={1000}
-        height={1000}
-        className="w-full h-64 object-cover"
-      />
-
-      <div className="flex flex-col justify-between flex-grow p-6 bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 rounded-b-lg">
-        <h1 className="text-3xl font-semibold text-white">{title}</h1>
-        <p className="mt-4 text-lg text-gray-300">{description}</p>
+    <div className="bg-gradient-to-r from-purple-900 to-black rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+      <div className="relative w-full h-48">
+        <Image src={src} alt={title} layout="fill" objectFit="cover" className="rounded-t-lg" />
+      </div>
+      <div className="p-6">
+        <h3 className="text-2xl font-semibold text-white mb-2">{title}</h3>
+        <p className="text-gray-400 mb-4">{description}</p>
+        <div className="text-sm text-gray-300 mb-2">
+          <strong>Tech Stack:</strong> {techStack}
+        </div>
+        <div className="text-sm text-gray-300">
+          <strong>Impact:</strong> {impact}
+        </div>
       </div>
     </div>
   );
