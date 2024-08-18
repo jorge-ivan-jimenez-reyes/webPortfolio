@@ -1,4 +1,4 @@
-import { Backend_skill, Frontend_skill, Full_stack, Skill_data } from "@/constants";
+import { Backend_skill, Frontend_skill, Full_stack } from "@/constants";
 import React from "react";
 import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
@@ -13,13 +13,12 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-20"
-      style={{ transform: "scale(0.9)" }}
+      className="flex flex-col items-center justify-center gap-3 py-20 relative overflow-hidden"
     >
+      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mb-16">
+        My Skills
+      </h1>
       <SkillText />
-
-  
-
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {(Frontend_skill as ImageData[]).map((image, index) => (
           <SkillDataProvider
