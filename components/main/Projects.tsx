@@ -17,11 +17,7 @@ const Projects = () => {
           description="The platform provides an intuitive and comprehensive interface that allows
           professors, department heads, and administrators to access and manage information efficiently."
         />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Web portfolio for a space-themed website. The website is built using React js and Tailwind CSS."
-        />
+       
         <ProjectCard
           src="/dashuser.png"
           title="Academic Management Dashboard"
