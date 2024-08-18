@@ -86,17 +86,9 @@ html {
   height: auto;
 }
 
-/* Fondo general */
+/* Fondo general con degradado */
 body {
-  background-color: #030014;
-}
-
-/* Sección con fondo negro */
-.section-black {
-  background-color: #000000;
-}
-
-/* Sección con degradado */
-.section-gradient {
-  background: linear-gradient(to bottom, #000000, #030014);
+  background: linear-gradient(to bottom, #030014, #000000);
+  background-attachment: fixed;
+  color: white;
 }
