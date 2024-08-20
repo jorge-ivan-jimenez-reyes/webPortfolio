@@ -39,6 +39,13 @@ const Projects = () => {
           techStack="MERN Stack (MongoDB, Express.js, React, Node.js)"
           impact="Reduced manual financial tracking by 80%."
         />
+        <ProjectCard
+          src="/perntodo.png"
+          title="Todoist Application with PERN Stack"
+          description="Created a full-featured Todoist application using the PERN stack (PostgreSQL, Express.js, React, Node.js). The app allows users to manage tasks efficiently with real-time updates and a robust backend."
+          techStack="PERN Stack (PostgreSQL, Express.js, React, Node.js)"
+          impact="Showcased my proficiency in building full-stack applications with complex database interactions."
+        />
       </div>
     </section>
   );
