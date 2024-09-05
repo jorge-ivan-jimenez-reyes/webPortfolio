@@ -46,6 +46,13 @@ const Projects = () => {
           techStack="PERN Stack (PostgreSQL, Express.js, React, Node.js)"
           impact="Showcased my proficiency in building full-stack applications with complex database interactions."
         />
+        <ProjectCard
+          src="/viajealinterior.png"
+          title="Viaje al Interior del Cuerpo Humano"
+          description="An interactive web application allowing users to explore the human body through modern web technologies and 3D models embedded with Spline."
+          techStack="XAMPP (Apache, MySQL, PHP), HTML5, CSS3, JavaScript, Spline"
+          impact="Enhanced learning through 3D interactive models, improving user engagement with educational content."
+        />
       </div>
     </section>
   );
