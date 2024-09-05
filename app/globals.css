@@ -86,9 +86,11 @@ html {
   height: auto;
 }
 
-/* Fondo general con degradado */
+/* Fondo general con degradado ajustado */
 body {
-  background: linear-gradient(to bottom, #030014, #000000);
+  background: linear-gradient(180deg, #030014 0%, #000000 100%);
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
 }
