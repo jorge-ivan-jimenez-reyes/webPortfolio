@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function HomePage() {
     return (
         <section className="flex flex-col items-center justify-center h-full w-full text-white text-center">
-            <h1 className="Welcome-text text-5xl font-bold cursive">¡Hola, soy David 🚀!</h1>
+            <h1 className="Welcome-text text-5xl font-bold cursive">¡Hola, soy George 🚀!</h1>
             <p className="mt-4 text-xl text-gray-300">
                 Fullstack Developer especializado en aplicaciones móviles y web
             </p>
