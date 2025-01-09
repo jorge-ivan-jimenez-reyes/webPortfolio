@@ -9,7 +9,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 w-full bg-gradient-to-b from-[#001f3f] to-[#0f172a] backdrop-blur-lg shadow-lg z-50">
+        <header className="fixed top-0 w-full backdrop-blur-lg z-50">
             <nav className="container mx-auto flex justify-between items-center py-4 px-6">
                 {/* Logo */}
                 <motion.div
@@ -50,7 +50,7 @@ const Header = () => {
             {/* Desplegable Mobile */}
             {isOpen && (
                 <motion.div
-                    className="md:hidden bg-gradient-to-b from-[#001f3f] to-[#0f172a] text-center py-6"
+                    className="md:hidden bg-transparent text-center py-6"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4 }}
