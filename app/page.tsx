@@ -22,11 +22,15 @@ export default function HomePage() {
 
             {/* Botones de navegación */}
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-                <Link href="/projects" className="button-primary hover:scale-105">
-                    Ver mis proyectos
+                <Link href="/projects">
+                    <span className="button-primary hover:scale-105 transition-transform duration-300">
+                        Ver mis proyectos
+                    </span>
                 </Link>
-                <Link href="/contact" className="button-primary bg-[#00bfff] hover:bg-[#009bff]">
-                    Contáctame
+                <Link href="/contact">
+                    <span className="button-primary bg-[#00bfff] hover:bg-[#009bff] transition-transform duration-300">
+                        Contáctame
+                    </span>
                 </Link>
             </div>
         </section>
