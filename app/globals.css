@@ -36,7 +36,25 @@ header {
   background-color: rgba(0, 31, 63, 0.9);
   padding: 1rem 0;
 }
+.neon-text {
+  color: #00f0ff;
+  text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 20px #009bff, 0 0 40px #00aaff;
+}
 
+.neon-glow:hover {
+  text-shadow: 0 0 10px #00f0ff, 0 0 20px #00d4ff, 0 0 40px #00bfff, 0 0 80px #009bff;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.neon-border {
+  border-top: 2px solid rgba(0, 255, 255, 0.6);
+  box-shadow: 0 -4px 15px rgba(0, 255, 255, 0.6);
+}
+
+.neon-hover:hover {
+  color: #00f0ff;
+  text-shadow: 0 0 8px #00f0ff, 0 0 20px #00bfff;
+}
 /* Main content */
 main {
   flex-grow: 1;

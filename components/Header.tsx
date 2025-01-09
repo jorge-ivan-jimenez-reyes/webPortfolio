@@ -9,17 +9,17 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 w-full backdrop-blur-lg z-50">
+        <header className="fixed top-0 w-full bg-gradient-to-r from-[#001f3f] via-[#00264d] to-[#0f172a] backdrop-blur-lg z-50 shadow-xl">
             <nav className="container mx-auto flex justify-between items-center py-4 px-6">
-                {/* Logo */}
+                {/* Logo con efecto neón */}
                 <motion.div
-                    className="Welcome-text text-3xl font-extrabold tracking-wide"
+                    className="text-4xl font-extrabold tracking-wide neon-text cursor-pointer"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
                     <Link href="/" className="hover:text-[#00f0ff] transition duration-300">
-                        🚀 David Dev
+                        🚀 <span className="neon-glow">David Dev</span>
                     </Link>
                 </motion.div>
 
@@ -30,9 +30,9 @@ const Header = () => {
                             key={item}
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
-                            className="text-white font-semibold hover:text-[#00f0ff] transition duration-300"
+                            className="text-white font-semibold transition duration-300 neon-hover"
                         >
-                            <Link href={`/${item.toLowerCase()}`}>
+                            <Link href={`/${item.toLowerCase()}`} className="hover:neon-glow">
                                 {item}
                             </Link>
                         </motion.div>
@@ -50,14 +50,14 @@ const Header = () => {
             {/* Desplegable Mobile */}
             {isOpen && (
                 <motion.div
-                    className="md:hidden bg-transparent text-center py-6"
+                    className="md:hidden bg-gradient-to-b from-[#001f3f] via-[#00264d] to-[#0f172a] text-center py-6 neon-border"
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4 }}
                 >
                     {["Proyectos", "Experiencia", "Habilidades", "Contacto"].map((item) => (
                         <div key={item} className="py-2">
-                            <Link href={`/${item.toLowerCase()}`} className="text-white text-xl font-semibold hover:text-[#00f0ff] transition duration-300">
+                            <Link href={`/${item.toLowerCase()}`} className="text-white text-xl font-semibold hover:text-[#00f0ff] neon-hover">
                                 {item}
                             </Link>
                         </div>
