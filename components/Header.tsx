@@ -19,7 +19,7 @@ const Header = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <Link href="/" className="hover:text-[#00f0ff] transition duration-300">
-                        🚀 <span className="neon-glow">David Dev</span>
+                        🚀 <span className="neon-glow">Jorge Jimenez</span>
                     </Link>
                 </motion.div>
 
