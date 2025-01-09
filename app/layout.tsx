@@ -7,7 +7,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <html lang="es">
         <body className="bg-gradient-to-b from-[#001f3f] to-black text-white flex flex-col min-h-screen">
         <Header />
-        <main className="flex-grow flex flex-col justify-center items-center w-full pt-20 lg:pt-24">
+        <main className="flex-grow flex flex-col w-full">
             {children}
         </main>
         <Footer />
