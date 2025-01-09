@@ -1,22 +1,34 @@
-"use client";
+import Image from 'next/image';
+import Link from 'next/link';
 
-import React from "react";
-import Navbar from "@/components/main/Navbar";
-import Hero from "@/components/main/Hero";
-import Skills from "@/components/main/Skills";
-import Projects from "@/components/main/Projects";
-import Footer from "@/components/main/Footer";
+export default function HomePage() {
+    return (
+        <section className="flex-grow flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#001f3f] to-black text-white text-center">
+            <h1 className="Welcome-text text-5xl font-bold cursive">¡Hola, soy David 🚀!</h1>
+            <p className="mt-4 text-xl text-gray-300">
+                Fullstack Developer especializado en aplicaciones móviles y web
+            </p>
 
-export default function Home() {
-  return (
-    <main className="h-full w-full">
-      <Navbar />
-      <Hero />
-      <div className="flex flex-col gap-20 px-8">
-        <Skills />
-        <Projects />
-      </div>
-      <Footer />
-    </main>
-  );
+            {/* Imagen de Perfil */}
+            <div className="mt-8">
+                <Image
+                    src="/images/profile.jpg"
+                    alt="David's Profile"
+                    width={200}
+                    height={200}
+                    className="responsive-img shadow-xl border-4 border-[#00f0ff] hover:scale-105 transition-transform duration-300"
+                />
+            </div>
+
+            {/* Botones de navegación */}
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+                <Link href="/projects" className="button-primary hover:scale-105">
+                    Ver mis proyectos
+                </Link>
+                <Link href="/contact" className="button-primary bg-[#00bfff] hover:bg-[#009bff]">
+                    Contáctame
+                </Link>
+            </div>
+        </section>
+    );
 }
