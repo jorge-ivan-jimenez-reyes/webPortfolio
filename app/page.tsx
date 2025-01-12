@@ -12,9 +12,7 @@ export default function HomePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
             >
-                <h1 className="Welcome-text text-6xl font-extrabold cursive drop-shadow-md">
-                    ¡Hola, soy <span className="neon-glow text-[#00f0ff]">George 🚀</span>!
-                </h1>
+
             </motion.div>
 
             {/* Descripción Animada */}
